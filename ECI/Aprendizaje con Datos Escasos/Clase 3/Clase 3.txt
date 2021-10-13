@@ -1,0 +1,17 @@
+Clase 3
+
+https://www.youtube.com/watch?v=aXJX2pOluJs
+
+https://albumentations.ai/
+
+https://colab.research.google.com/drive/1PHv-IRLPCtv7oTcIGbsgZHqrB5LPvB7S
+
+https://www.coursera.org/lecture/deep-neural-network/mini-batch-gradient-descent-qcogH
+
+https://github.com/dccuchile/beto ahí te permite                 #descargar el vocab
+
+https://colab.research.google.com/drive/1ItS0-ZPXGcEeVmRmHaneX3w8eq6Vhdde?usp=sharing&fbclid=IwAR0z7XXLyy3KCJva9d-7zIXEYAZ8GK-9kXz4_hd_U_gfnu6-SoizgexOpXE
+
+https://github.com/pysentimiento/pysentimiento #esta construido usando las tecnicas que jorge esta contando, lo armo un estudiante de doctorando del departamento
+
+https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html

@@ -1,0 +1,10 @@
+Segunda clase 
+
+https://www.youtube.com/watch?v=1eHI-Tvil40
+
+
+algunos links para ver
+
+https://www.youtube.com/watch?v=U6uFOIURcD0
+
+https://colah.github.io/posts/2015-08-Understanding-LSTMs/

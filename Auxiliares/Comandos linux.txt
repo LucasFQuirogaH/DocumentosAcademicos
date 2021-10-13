@@ -1,0 +1,71 @@
+Comandos linux
+
+sudo chmod -R 777 descargas/telegram/ #Para dar permisos para ejecutarse
+
+apt-get update #Para ctualizar el repositorio de Linux
+
+Bajar en instalar archivos .deb
+sudo dpkg -i Discord...
+sudo apt -f install # Para poder corregir las dependencias
+
+r = 4 w= 2 x = 1
+chmod 750 archivo
+
+sudo apt-get remove --purge phpmyadmin # Para desinstalar
+
+sudo apt-get install phpmyadmin
+
+
+
+tar xf Archiv.xz # Para descomprimir
+
+
+sudo nano archivo.desktop # Para editar cualquier archivo pasando por alto los permisos
+
+[Desktop Entry]
+Enconding=UTF-8
+Name=Matlab R2018a
+Comment=Matlab IDE para Ubuntu 18.04.02 LTS
+TryExec=/usr/local/MATLAB/R2018a/bin/MATLAB/R2018a/bin/matlab -desktop
+Exec=/usr/local/MATLAB/R2018a/bin/MATLAB/R2018a/bin/matlab -desktop
+Icon=/usr/local/MATLAB/R2018a/recurso_jhon/Apps-Matlab-icon.png
+Categories=Application;Development;Matlab;IDE
+Version=R2018a
+Type=Application
+Terminal=false
+03. Dar los permisos necesarios mediante:
+sudo chmod 777 vivado.desktop
+$ sudo chown lucquifer:lucquifer -R /user/local/MATLAB
+
+
+cp -r /home/lucquifer/Descargas/board_files /tools/Xilinx/Vivado/2021.1/data/boards/
+
+
+rm vivado.desktop # Para borrar
+
+
+cp -r * /tools/Xilinx/Vitis/2020.2/data/boards/board_files/
+
+
+Para copiar, no olvidar colocarse como superusuario
+
+
+
+
+
+
+
+cp -r * /tools/Xilinx/Vitis/2020.2/data/boards/board_files/ # Te paras en el directorio y copias con superusuario
+
+
+sudo rm -R pseint #Para borrar el directorio aunque este lleno
+
+find . -name "*.desktop" Busqueda Full!!!
+
+./.local/share/applications/chrome-jdiljfjhhgfdhleohmkflhbalombkbhn-Profile_1.desktop # En ese directorio se guardan los accesos directos de google chrome que se guardan en el menu de aplicaciones
+
+
+
+
+
+

@@ -1,0 +1,910 @@
+Model {
+  Name			  "banco_pid"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Aug 11 22:26:47 2006"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "-"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Aug 23 17:28:27 2006"
+  ModelVersionFormat	  "1.%<AutoIncrement:4>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "10.0"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Derivative
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      ShowAdditionalParam     off
+      AllPortsSameDT	      on
+      OutDataTypeMode	      "Logical (see Advanced Sim. Parameters)"
+      LogicDataType	      "uint(8)"
+    }
+    Block {
+      BlockType		      MultiPortSwitch
+      Inputs		      "4"
+      ShowAdditionalParam     off
+      zeroidx		      off
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Advanced Sim. Parameters)"
+      LogicDataType	      "uint(8)"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      TransferFcn
+      Numerator		      "[1]"
+      Denominator	      "[1 2 1]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "banco_pid"
+    Location		    [90, 181, 653, 474]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Inport
+      Name		      "ur"
+      Position		      [120, 88, 150, 102]
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "e(t)"
+      Position		      [120, 183, 150, 197]
+      Port		      "2"
+    }
+    Block {
+      BlockType		      MultiPortSwitch
+      Name		      "Multiport\nSwitch"
+      Ports		      [5, 1]
+      Position		      [360, 159, 390, 221]
+      InputSameDT	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PD 1"
+      Ports		      [1, 1]
+      Position		      [210, 135, 240, 165]
+      SourceBlock	      "simulink_extras/Additional\nLinear/PID Controll"
+"er"
+      SourceType	      "PID Controller"
+      P			      "111"
+      I			      "0"
+      D			      "158.73"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PD 2"
+      Ports		      [1, 1]
+      Position		      [210, 185, 240, 215]
+      SourceBlock	      "simulink_extras/Additional\nLinear/PID Controll"
+"er"
+      SourceType	      "PID Controller"
+      P			      "12.34"
+      I			      "0"
+      D			      "18.22"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PD 3"
+      Ports		      [1, 1]
+      Position		      [210, 235, 240, 265]
+      SourceBlock	      "simulink_extras/Additional\nLinear/PID Controll"
+"er"
+      SourceType	      "PID Controller"
+      P			      "4.44"
+      I			      "0"
+      D			      "6.76"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PD 4"
+      Ports		      [1, 1]
+      Position		      [210, 290, 240, 320]
+      SourceBlock	      "simulink_extras/Additional\nLinear/PID Controll"
+"er"
+      SourceType	      "PID Controller"
+      P			      "2.5"
+      I			      "0"
+      D			      "3.9"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "selector"
+      Ports		      [1, 1]
+      Position		      [190, 73, 255, 117]
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"selector"
+	Location		[2, 82, 773, 550]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "q(t)"
+	  Position		  [15, 208, 45, 222]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [60, 80, 90, 110]
+	  ShowName		  off
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [60, 265, 90, 295]
+	  ShowName		  off
+	  Value			  "0.6"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  Position		  [60, 150, 90, 180]
+	  ShowName		  off
+	  Value			  "0.3"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  Position		  [60, 340, 90, 370]
+	  ShowName		  off
+	  Value			  "0.9"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  Position		  [240, 160, 270, 190]
+	  ShowName		  off
+	  Value			  "2"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant5"
+	  Position		  [240, 265, 270, 295]
+	  ShowName		  off
+	  Value			  "3"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant6"
+	  Position		  [240, 360, 270, 390]
+	  ShowName		  off
+	  Value			  "4"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant7"
+	  Position		  [65, 455, 95, 485]
+	  ShowName		  off
+	  Value			  "1.5"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "L1"
+	  Ports			  [2, 1]
+	  Position		  [240, 203, 270, 252]
+	  ShowName		  off
+	  AllPortsSameDT	  off
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "L2"
+	  Ports			  [2, 1]
+	  Position		  [240, 300, 270, 335]
+	  ShowName		  off
+	  AllPortsSameDT	  off
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "L3"
+	  Ports			  [2, 1]
+	  Position		  [240, 99, 270, 146]
+	  ShowName		  off
+	  AllPortsSameDT	  off
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "L4"
+	  Ports			  [2, 1]
+	  Position		  [245, 415, 275, 450]
+	  ShowName		  off
+	  AllPortsSameDT	  off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  Ports			  [2, 1]
+	  Position		  [295, 162, 325, 253]
+	  ShowName		  off
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [295, 262, 325, 338]
+	  ShowName		  off
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  Ports			  [2, 1]
+	  Position		  [300, 362, 330, 438]
+	  ShowName		  off
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "R"
+	  Position		  [180, 72, 210, 103]
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "R1"
+	  Position		  [180, 117, 210, 148]
+	  Operator		  "<"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "R2"
+	  Position		  [180, 177, 210, 208]
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "R3"
+	  Position		  [180, 222, 210, 253]
+	  Operator		  "<"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "R4"
+	  Position		  [180, 287, 210, 318]
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "R5"
+	  Position		  [180, 332, 210, 363]
+	  Operator		  "<"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "R6"
+	  Position		  [180, 397, 210, 428]
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "R7"
+	  Position		  [180, 447, 210, 478]
+	  Operator		  "<="
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [4, 1]
+	  Position		  [400, 164, 420, 236]
+	  ShowName		  off
+	  Inputs		  "|++++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "select"
+	  Position		  [465, 193, 495, 207]
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "R"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "q(t)"
+	  SrcPort		  1
+	  Points		  [65, 0; 0, -135]
+	  Branch {
+	    DstBlock		    "R"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    Branch {
+	      DstBlock		      "R1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 60]
+	      Branch {
+		DstBlock		"R2"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 45]
+		Branch {
+		  DstBlock		  "R3"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 65]
+		  Branch {
+		    DstBlock		    "R4"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 45]
+		    Branch {
+		    DstBlock		    "R5"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 65]
+		    Branch {
+		    DstBlock		    "R6"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 50]
+		    DstBlock		    "R7"
+		    DstPort		    1
+		    }
+		    }
+		  }
+		}
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "R"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "L3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "R1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 35]
+	    DstBlock		    "R2"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "R1"
+	  SrcPort		  1
+	  DstBlock		  "L3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    Points		    [0, -35]
+	    DstBlock		    "R3"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 30]
+	    DstBlock		    "R4"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "R2"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 20]
+	  DstBlock		  "L1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "R3"
+	  SrcPort		  1
+	  DstBlock		  "L1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "R5"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [-5, 0; 0, 40; -5, 0; 0, 25]
+	    DstBlock		    "R6"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "R5"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "L2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Product"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "L1"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant5"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "L2"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "L3"
+	  SrcPort		  1
+	  Points		  [110, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  Points		  [55, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, -85]
+	  DstBlock		  "Sum2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "select"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "R4"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 5]
+	  DstBlock		  "L2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant7"
+	  SrcPort		  1
+	  DstBlock		  "R7"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "R7"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "L4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "L4"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Product2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product2"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, -170]
+	  DstBlock		  "Sum2"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "R6"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, 10]
+	  DstBlock		  "L4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant6"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 5]
+	  DstBlock		  "Product2"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "SELECTOR DE ZONA"
+	  Position		  [197, 43]
+	  DropShadow		  on
+	  FontName		  "Book Antiqua"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "out"
+      Position		      [425, 183, 455, 197]
+    }
+    Line {
+      SrcBlock		      "e(t)"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	Points			[15, 0]
+	DstBlock		"PD 2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -40]
+	DstBlock		"PD 1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 60]
+	Branch {
+	  DstBlock		  "PD 3"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 55]
+	  DstBlock		  "PD 4"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "PD 1"
+      SrcPort		      1
+      Points		      [75, 0; 0, 30]
+      DstBlock		      "Multiport\nSwitch"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "PD 2"
+      SrcPort		      1
+      Points		      [0, -10]
+      DstBlock		      "Multiport\nSwitch"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "PD 3"
+      SrcPort		      1
+      Points		      [75, 0; 0, -50]
+      DstBlock		      "Multiport\nSwitch"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Multiport\nSwitch"
+      SrcPort		      1
+      DstBlock		      "out"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "ur"
+      SrcPort		      1
+      DstBlock		      "selector"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "selector"
+      SrcPort		      1
+      Points		      [85, 0]
+      DstBlock		      "Multiport\nSwitch"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "PD 4"
+      SrcPort		      1
+      Points		      [80, 0; 0, -95]
+      DstBlock		      "Multiport\nSwitch"
+      DstPort		      5
+    }
+  }
+}

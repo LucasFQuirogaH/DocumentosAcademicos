@@ -1,0 +1,516 @@
+Model {
+  Name			  "practica"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sat Sep 01 12:25:34 2001"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Sep 10 20:49:57 2002"
+  ModelVersionFormat	  "1.%<AutoIncrement:31>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "100.0"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-4"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  ".1*ts"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  ".1"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeLogAll		  on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "practica"
+    Location		    [4, 74, 800, 556]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Constant
+      Name		      "1  Señal  PRBS\n2 Ruido blanco\n3 Escalón"
+      Position		      [55, 105, 85, 135]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Escalón"
+      Position		      [55, 300, 85, 330]
+      Time		      "0"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      MultiPortSwitch
+      Name		      "Multiport\nSwitch2"
+      Ports		      [4, 1]
+      Position		      [195, 112, 225, 173]
+      ShowName		      off
+      Inputs		      "3"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      Ports		      [2, 1]
+      Position		      [630, 67, 635, 103]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux4"
+      Ports		      [2, 1]
+      Position		      [560, 350, 565, 385]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      RandomNumber
+      Name		      "Ruido Blanco"
+      Position		      [55, 250, 85, 280]
+      Mean		      "0"
+      Variance		      "1"
+      Seed		      "0"
+      SampleTime	      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Señal PRBS1"
+      Ports		      [0, 1]
+      Position		      [55, 193, 90, 227]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Señal PRBS1"
+	Location		[8, 74, 804, 584]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  RandomNumber
+	  Name			  "Random\nNumber"
+	  Position		  [25, 30, 55, 60]
+	  Mean			  "0"
+	  Variance		  "1"
+	  Seed			  "0"
+	  SampleTime		  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Signum
+	  Name			  "Sign"
+	  Position		  [80, 30, 110, 60]
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [140, 26, 175, 64]
+	  SampleTime		  "ts"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u ( t )"
+	  Position		  [200, 38, 230, 52]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "u ( t )"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sign"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Random\nNumber"
+	  SrcPort		  1
+	  DstBlock		  "Sign"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Display
+      Name		      "T"
+      Ports		      [1]
+      Position		      [665, 61, 750, 109]
+      ShowName		      off
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      DigitalClock
+      Name		      "Tiempo de simulación"
+      Position		      [535, 45, 585, 65]
+      DropShadow	      on
+      SampleTime	      ".1"
+      Port {
+	PortNumber		1
+	Name			"t"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "planta"
+      Ports		      [1, 1]
+      Position		      [335, 113, 435, 177]
+      BackgroundColor	      "cyan"
+      DropShadow	      on
+      FunctionName	      "planta3_sf"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "ts = período de muestreo (del workspace)"
+      Position		      [535, 103, 600, 127]
+      BackgroundColor	      "black"
+      VariableName	      "[ts ts]"
+      SampleTime	      "0"
+      Interpolate	      on
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "ts del workspace"
+      Position		      [635, 266, 670, 304]
+      SampleTime	      "ts"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "ts del workspace1"
+      Position		      [635, 201, 670, 239]
+      SampleTime	      "ts"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "u"
+      Position		      [705, 205, 765, 235]
+      ShowName		      off
+      VariableName	      "u"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "ts"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "y"
+      Position		      [705, 270, 765, 300]
+      ShowName		      off
+      VariableName	      "y"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "ts"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "y - u"
+      Ports		      [1]
+      Position		      [610, 354, 640, 386]
+      Floating		      off
+      Location		      [5, 53, 805, 603]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Line {
+      SrcBlock		      "1  Señal  PRBS\n2 Ruido blanco\n3 Escalón"
+      SrcPort		      1
+      DstBlock		      "Multiport\nSwitch2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ruido Blanco"
+      SrcPort		      1
+      Points		      [75, 0; 0, -115]
+      DstBlock		      "Multiport\nSwitch2"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Mux4"
+      SrcPort		      1
+      DstBlock		      "y - u"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "planta"
+      SrcPort		      1
+      Points		      [80, 0; 0, 140]
+      Branch {
+	DstBlock		"ts del workspace"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 75]
+	DstBlock		"Mux4"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Multiport\nSwitch2"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	Points			[30, 0]
+	DstBlock		"planta"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 75]
+	Branch {
+	  Labels		  [1, 0]
+	  Points		  [0, 155]
+	  DstBlock		  "Mux4"
+	  DstPort		  2
+	}
+	Branch {
+	  DstBlock		  "ts del workspace1"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Escalón"
+      SrcPort		      1
+      Points		      [90, 0]
+      DstBlock		      "Multiport\nSwitch2"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Señal PRBS1"
+      SrcPort		      1
+      Points		      [25, 0; 0, -75]
+      DstBlock		      "Multiport\nSwitch2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "ts del workspace"
+      SrcPort		      1
+      DstBlock		      "y"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "ts = período de muestreo (del workspace)"
+      SrcPort		      1
+      Points		      [10, 0]
+      DstBlock		      "Mux1"
+      DstPort		      2
+    }
+    Line {
+      Name		      "t"
+      Labels		      [0, 0]
+      SrcBlock		      "Tiempo de simulación"
+      SrcPort		      1
+      Points		      [25, 0]
+      DstBlock		      "Mux1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "T"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "ts del workspace1"
+      SrcPort		      1
+      DstBlock		      "u"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [592, 274]
+      Text		      "y(t)"
+    }
+    Annotation {
+      Position		      [596, 210]
+      Text		      "u(t)"
+    }
+    Annotation {
+      Position		      [406, 446]
+      Text		      "Iniciar definiendo ts (período de muestreo) en "
+"el workspace"
+      FontName		      "Technical"
+      FontSize		      24
+      FontWeight	      "bold"
+      FontAngle		      "italic"
+    }
+  }
+}

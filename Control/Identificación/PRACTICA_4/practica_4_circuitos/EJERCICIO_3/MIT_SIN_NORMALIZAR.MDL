@@ -1,0 +1,1072 @@
+Model {
+  Name			  "MIT_SIN_NORMALIZAR"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Dec 30 20:11:37 2005"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Administrador"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Sep 09 22:50:59 2009"
+  ModelVersionFormat	  "1.%<AutoIncrement:63>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "500"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "6"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  RTWOptions		  "-aEnforceIntegerDowncast=1 -aExtMode=0 -aExtModeTes"
+"ting=0 -aFoldNonRolledExpr=1 -aForceParamTrailComments=0 -aGenerateComments=1"
+" -aGenerateReport=0 -aIgnoreCustomStorageClasses=1 -aIncDataTypeInIds=0 -aInc"
+"HierarchyInIds=0 -aInlineInvariantSignals=0 -aInlinedPrmAccess=\"Literals\" -"
+"aLocalBlockOutputs=1 -aLogVarNameModifier=\"rt_\" -aMaxRTWIdLen=31 -aPrefixMo"
+"delToSubsysFcnNames=1 -aRTWVerbose=1 -aRollThreshold=5 -aShowEliminatedStatem"
+"ents=0"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SignalGenerator
+      WaveForm		      "sine"
+      Amplitude		      "1"
+      Frequency		      "1"
+      Units		      "Hertz"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Numerator		      "[1]"
+      Denominator	      "[1 2 1]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "MIT_SIN_NORMALIZAR"
+    Location		    [2, 82, 790, 550]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      Position		      [360, 110, 380, 130]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Controlador"
+      Ports		      [3, 1]
+      Position		      [215, 241, 345, 299]
+      BackgroundColor	      "darkGreen"
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"Controlador"
+	Location		[2, 86, 790, 550]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "referencia"
+	  Position		  [35, 68, 65, 82]
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "error"
+	  Position		  [25, 203, 55, 217]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "y"
+	  Position		  [35, 273, 65, 287]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [365, 105, 395, 135]
+	  Gain			  "-1"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  Position		  [365, 270, 395, 300]
+	  Gain			  "-1"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Gama"
+	  Position		  [185, 140, 215, 170]
+	  Value			  "Gama"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Gama1"
+	  Position		  [185, 300, 215, 330]
+	  Value			  "Gama"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [430, 105, 460, 135]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator1"
+	  Ports			  [1, 1]
+	  Position		  [430, 270, 460, 300]
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  Ports			  [3, 1]
+	  Position		  [280, 96, 325, 144]
+	  Inputs		  "3"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [3, 1]
+	  Position		  [280, 261, 325, 309]
+	  Inputs		  "3"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  Ports			  [2, 1]
+	  Position		  [585, 273, 630, 322]
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product3"
+	  Ports			  [2, 1]
+	  Position		  [575, 73, 620, 122]
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope"
+	  Ports			  [1]
+	  Position		  [670, 34, 700, 66]
+	  Location		  [254, 309, 578, 548]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  List {
+	    ListType		    SelectedSignals
+	    axes1		    ""
+	  }
+	  SaveName		  "ScopeData4"
+	  DataFormat		  "StructureWithTime"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope1"
+	  Ports			  [1]
+	  Position		  [570, 204, 600, 236]
+	  Location		  [254, 309, 578, 548]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  List {
+	    ListType		    SelectedSignals
+	    axes1		    ""
+	  }
+	  SaveName		  "ScopeData5"
+	  DataFormat		  "StructureWithTime"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [675, 175, 700, 210]
+	  ShowName		  off
+	  Inputs		  "-+"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace"
+	  Position		  [420, 55, 480, 85]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  VariableName		  "tita1"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "-1"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace1"
+	  Position		  [395, 210, 455, 240]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  VariableName		  "tita2"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "-1"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace2"
+	  Position		  [485, 310, 545, 340]
+	  VariableName		  "dtita2"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "-1"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace3"
+	  Position		  [535, 145, 595, 175]
+	  VariableName		  "dtita1"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "-1"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Transfer Fcn"
+	  Position		  [180, 57, 240, 93]
+	  Numerator		  "[am]"
+	  Denominator		  "[1 am]"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Transfer Fcn1"
+	  Position		  [175, 222, 235, 258]
+	  Numerator		  "[am]"
+	  Denominator		  "[1 am]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u"
+	  Position		  [730, 188, 760, 202]
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    DstBlock		    "Integrator"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 40]
+	    DstBlock		    "To Workspace3"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Transfer Fcn"
+	  SrcPort		  1
+	  Points		  [0, 30]
+	  DstBlock		  "Product"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gama"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -20]
+	  DstBlock		  "Product"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, -10]
+	  Branch {
+	    Points		    [0, -40]
+	    DstBlock		    "To Workspace"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [30, 0]
+	    Branch {
+	      DstBlock		      "Product3"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, -60]
+	      DstBlock		      "Scope"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    DstBlock		    "Integrator1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 40]
+	    DstBlock		    "To Workspace2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Transfer Fcn1"
+	  SrcPort		  1
+	  Points		  [0, 30]
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gama1"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -15]
+	  DstBlock		  "Product1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Integrator1"
+	  SrcPort		  1
+	  Points		  [0, 0; 35, 0]
+	  Branch {
+	    Points		    [0, -60]
+	    DstBlock		    "To Workspace1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [45, 0]
+	    Branch {
+	      DstBlock		      "Product2"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, -65]
+	      DstBlock		      "Scope1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "referencia"
+	  SrcPort		  1
+	  Points		  [0, 0; 65, 0]
+	  Branch {
+	    Points		    [0, -45; 405, 0; 0, 55]
+	    DstBlock		    "Product3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Transfer Fcn"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "error"
+	  SrcPort		  1
+	  Points		  [0, 0; 70, 0]
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Product1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -90]
+	    DstBlock		    "Product"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "y"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    Points		    [0, 80; 480, 0]
+	    DstBlock		    "Product2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -40]
+	    DstBlock		    "Transfer Fcn1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Product2"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -100]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product3"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 85]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "u"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Km"
+      Position		      [270, 170, 300, 200]
+      BackgroundColor	      "lightBlue"
+      Gain		      "Km"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Modelo de Referencia"
+      Position		      [320, 156, 460, 214]
+      BackgroundColor	      "lightBlue"
+      Denominator	      "[1 1]"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Planta"
+      Position		      [420, 241, 555, 299]
+      BackgroundColor	      "orange"
+      Denominator	      "[1 a1 a2]"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1]
+      Position		      [720, 244, 750, 276]
+      Location		      [1, 56, 801, 565]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      Ports		      [1]
+      Position		      [625, 254, 655, 286]
+      Location		      [70, 279, 394, 518]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope2"
+      Ports		      [1]
+      Position		      [665, 144, 695, 176]
+      Location		      [5, 60, 805, 569]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope3"
+      Ports		      [1]
+      Position		      [215, 134, 245, 166]
+      Location		      [1, 56, 801, 565]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      SaveName		      "ScopeData3"
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope4"
+      Ports		      [1]
+      Position		      [520, 79, 550, 111]
+      Location		      [5, 60, 805, 569]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      SaveName		      "ScopeData6"
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      SignalGenerator
+      Name		      "Signal\nGenerator"
+      Position		      [115, 170, 145, 200]
+      WaveForm		      "square"
+      Amplitude		      "3.5"
+      Frequency		      "0.05"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [615, 174, 630, 221]
+      ShowName		      off
+      Inputs		      "+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      Position		      [410, 105, 470, 135]
+      VariableName	      "t"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      Position		      [260, 90, 320, 120]
+      VariableName	      "referencia"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      Position		      [705, 185, 765, 215]
+      VariableName	      "error"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace3"
+      Position		      [495, 130, 555, 160]
+      VariableName	      "ym"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace4"
+      Position		      [615, 310, 675, 340]
+      VariableName	      "y"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Line {
+      SrcBlock		      "Controlador"
+      SrcPort		      1
+      DstBlock		      "Planta"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Signal\nGenerator"
+      SrcPort		      1
+      Points		      [0, 0; 25, 0]
+      Branch {
+	Points			[0, 65]
+	DstBlock		"Controlador"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -80]
+	DstBlock		"To Workspace1"
+	DstPort			1
+      }
+      Branch {
+	Points			[20, 0]
+	Branch {
+	  Points		  [0, -35]
+	  DstBlock		  "Scope3"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Km"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Modelo de Referencia"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	Points			[105, 0]
+	Branch {
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -25]
+	  DstBlock		  "Scope2"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	Points			[0, -40]
+	Branch {
+	  DstBlock		  "To Workspace3"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -50]
+	  DstBlock		  "Scope4"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      Points		      [0, 0; 50, 0]
+      Branch {
+	DstBlock		"To Workspace2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 60]
+	Branch {
+	  Points		  [0, 100; -560, 0; 0, -90]
+	  DstBlock		  "Controlador"
+	  DstPort		  2
+	}
+	Branch {
+	  DstBlock		  "Scope"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      DstBlock		      "To Workspace"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Planta"
+      SrcPort		      1
+      Points		      [0, 0; 30, 0]
+      Branch {
+	Points			[0, -60]
+	DstBlock		"Sum1"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 0]
+	Branch {
+	  DstBlock		  "Scope1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 55]
+	  Branch {
+	    Points		    [0, 0]
+	    DstBlock		    "To Workspace4"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-425, 0; 0, -35]
+	    DstBlock		    "Controlador"
+	    DstPort		    3
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Km"
+      SrcPort		      1
+      DstBlock		      "Modelo de Referencia"
+      DstPort		      1
+    }
+    Annotation {
+      Name		      "y"
+      Position		      [568, 251]
+    }
+    Annotation {
+      Name		      "ym"
+      Position		      [450, 173]
+    }
+    Annotation {
+      Name		      "u"
+      Position		      [336, 267]
+    }
+    Annotation {
+      Name		      "error"
+      Position		      [650, 192]
+    }
+    Annotation {
+      Name		      "MIT sin normalizar"
+      Position		      [397, 85]
+      BackgroundColor	      "lightBlue"
+      DropShadow	      on
+      FontName		      "Arial"
+      FontSize		      12
+    }
+    Annotation {
+      Name		      "Lucas QUIROGA\n"
+      Position		      [607, 107]
+      BackgroundColor	      "lightBlue"
+      DropShadow	      on
+    }
+    Annotation {
+      Name		      "Gama=0.1;\nkp=1;\na1=1;\na2=2;\nkm=2; \na=1.5;"
+"\nb=1.5;\nam=2.5;\nbm=4;\nen amplitud=3.5\n"
+      Position		      [54, 209]
+      ForegroundColor	      "blue"
+    }
+  }
+}

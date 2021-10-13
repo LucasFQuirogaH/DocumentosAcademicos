@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=RRZ_0mDXPKU
+
+
+https://colab.research.google.com/github/sicara/easy-few-shot-learning/blob/master/notebooks/my_first_few_shot_classifier.ipynb
