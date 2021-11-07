@@ -65,6 +65,29 @@ find . -name "*.desktop" Busqueda Full!!!
 ./.local/share/applications/chrome-jdiljfjhhgfdhleohmkflhbalombkbhn-Profile_1.desktop # En ese directorio se guardan los accesos directos de google chrome que se guardan en el menu de aplicaciones
 
 
+Desinstalacion de JAVA
+
+1. sudo dpkg --list | grep -i jdk
+
+2. sudo apt-get purge java..version ..
+
+
+sudo apt install default-jre              # version 2:1.11-72, or
+sudo apt install openjdk-11-jre-headless  # version 11.0.7+10-3ubuntu1
+sudo apt install openjdk-13-jre-headless  # version 13.0.3+3-1ubuntu2
+sudo apt install openjdk-14-jre-headless  # version 14.0.1+7-1ubuntu1
+sudo apt install openjdk-8-jre-headless   # version 8u252-b09-1ubuntu1
+
+# sudo apt install default-jre
+
+# sudo apt install default-jdk
+
+
+
+pagina de netbeans
+https://archive.org/download/jdk-8u111-nb-8_2
+
+wget -c http://......
 
 
 
