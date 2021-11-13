@@ -90,5 +90,8 @@ https://archive.org/download/jdk-8u111-nb-8_2
 wget -c http://......
 
 
+sudo snap remove pycharm-community
+
+
 
 
