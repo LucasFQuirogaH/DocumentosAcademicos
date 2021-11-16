@@ -92,6 +92,8 @@ wget -c http://......
 
 sudo snap remove pycharm-community
 
+sudo apt-get --purge remove
+
 
 
 
